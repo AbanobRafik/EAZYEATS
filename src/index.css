@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
+:root {
+  --color-amber-300: #ffd700;
+}
+
 body {
   font-family: "Outfit", sans-serif;
 }
-#NavLink {
-  font-size: 25px;
+nav .active {
+  border-bottom: 2px solid var(--color-amber-300);
 }
