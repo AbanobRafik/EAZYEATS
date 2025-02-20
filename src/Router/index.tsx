@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Recipes from "../Pages/Recipes";
 import Random from "../Pages/Random";
 import Contact from "../Pages/Contact";
+import React from "react";
 
 function Router() {
   return (
