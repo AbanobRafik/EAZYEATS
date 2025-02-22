@@ -29,7 +29,7 @@ const NavBar = () => {
             <NavLink
               className="hover:border-b-amber-300  border-b-2 border-transparent transition duration-500"
               id="link"
-              to={"home"}
+              to={"/"}
             >
               Home
             </NavLink>
