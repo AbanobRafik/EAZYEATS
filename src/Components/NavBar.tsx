@@ -5,11 +5,11 @@ import { Menu } from "lucide-react";
 const NavBar = () => {
   const [openMenu, setIsOpenMenu] = useState(false);
   return (
-    <nav className="relative flex-wrap flex w-full justify-between items-center px-25 py-2 backdrop:blur-md border-b-amber-300 border-b-2 bg-white/10 backdrop-blur-md border shadow-lg">
+    <nav className="relative flex-wrap flex w-full justify-between items-center px-6 py-4 backdrop:blur-md border-b-amber-300 border-b-2 bg-white/10 backdrop-blur-md border shadow-lg">
       {/* for small screen */}
-      <div className="flex items-center space-x-2 text-center md:text-left">
-        <img src="/src/assets/logo.png" className="w-10 h-10 mb-3.5" />
-        <h3 className="md:text-2xl text-xl font-bold ">EAZYEAT</h3>
+      <div className="flex items-center space-x-2">
+        <img src="/src/assets/logo.png" className="w-10 h-10 mb-4" />
+        <h3 className="md:text-2xl text-xl font-bold">EAZYEAT</h3>
       </div>
 
       <button className="md:hidden" onClick={() => setIsOpenMenu(!openMenu)}>
@@ -21,42 +21,37 @@ const NavBar = () => {
           openMenu
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 md:max-h-screen md:opacity-100"
-        } overflow-hidden transition-all duration-300 ease-in-out
-          w-full md:flex md:items-center  md:w-auto  md:justify-between`}
+        } overflow-hidden transition-all duration-300 ease-in-out w-full md:flex md:items-center md:w-auto`}
       >
-        <ul className="flex text-center flex-col md:flex-row md:items-center md:gap-10 gap-4 mt-4 md:mt-0 justify-center md:mx-auto">
+        <ul className="flex text-center flex-col md:flex-row md:items-center md:gap-8 gap-4 mt-4 md:mt-0 justify-center md:mx-auto">
           <li>
             <NavLink
-              className="hover:border-b-amber-300  border-b-2 border-transparent transition duration-500"
-              id="link"
-              to={"/"}
+              className="hover:border-b-amber-300 border-b-2 border-transparent transition duration-500"
+              to="/"
             >
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              className="hover:border-b-amber-300  border-b-2 border-transparent transition duration-500"
-              id="link"
-              to={"recipes"}
+              className="hover:border-b-amber-300 border-b-2 border-transparent transition duration-500"
+              to="/recipes"
             >
               Recipes
             </NavLink>
           </li>
           <li>
             <NavLink
-              className="hover:border-b-amber-300  border-b-2 border-transparent transition duration-500"
-              id="link"
-              to={"random"}
+              className="hover:border-b-amber-300 border-b-2 border-transparent transition duration-500"
+              to="/random"
             >
               Random
             </NavLink>
           </li>
           <li>
             <NavLink
-              className="hover:border-b-amber-300  border-b-2 border-transparent transition duration-500"
-              id="link"
-              to={"contact"}
+              className="hover:border-b-amber-300 border-b-2 border-transparent transition duration-500"
+              to="/contact"
             >
               Contact
             </NavLink>

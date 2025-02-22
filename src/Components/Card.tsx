@@ -12,7 +12,7 @@ const Card = ({ id, title, image }: Card) => {
     <Link to={`/product/${id}`} className="block">
       <div
         id={`card-${id}`}
-        className="w-96 border-2 border-amber-400 h-96 rounded-lg shadow-lg p-5 overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-amber-500"
+        className="md:w-96 w-80 border-2  border-amber-400 h-96 rounded-lg shadow-lg p-5 overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-amber-500"
       >
         <img
           src={image}
