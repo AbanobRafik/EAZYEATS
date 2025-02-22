@@ -54,13 +54,13 @@ const Home = () => {
         {/* Improved Paragraph Section */}
         <div className="text-center max-w-2xl pb-6 border-b border-amber-500">
           <p className="text-lg text-gray-700 font-medium leading-relaxed">
-            Explore our{" "}
-            <span className="text-amber-500 font-semibold">top recipes</span>,
+            Explore our
+            <span className="text-amber-500 font-semibold"> top recipes</span>,
             carefully crafted to bring excitement to your kitchen! Whether
             you’re in the mood for a quick and easy meal or a gourmet dish to
-            impress, these recipes are designed to be both{" "}
-            <span className="text-amber-500 font-semibold">delicious</span> and
-            <span className="text-amber-500 font-semibold">effortless</span>.
+            impress, these recipes are designed to be both
+            <span className="text-amber-500 font-semibold"> delicious</span> and
+            <span className="text-amber-500 font-semibold"> effortless</span>.
             Get ready to cook, create, and savor every bite!
           </p>
         </div>
