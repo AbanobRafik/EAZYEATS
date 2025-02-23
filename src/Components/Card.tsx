@@ -1,11 +1,5 @@
 import React from "react";
-
-interface Card {
-  id: number;
-  title: string;
-  image: string;
-  extendedIngredients?: [];
-}
+import type { Card } from "../interface";
 
 const Card = ({ id, title, image }: Card) => {
   return (
