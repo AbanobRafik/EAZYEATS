@@ -90,12 +90,17 @@ const Home = () => {
         ) : (
           <div className="flex gap-5 border-amber-400 flex-wrap justify-center">
             {recipes.map((recipe) => (
-              <Card
+              <Link
+                to={`/recipedetails/${recipe.id}/${recipe.title}`}
                 key={recipe.id}
-                id={recipe.id}
-                image={recipe.image}
-                title={recipe.title}
-              />
+              >
+                <Card
+                  key={recipe.id}
+                  id={recipe.id}
+                  image={recipe.image}
+                  title={recipe.title}
+                />
+              </Link>
             ))}
           </div>
         )}

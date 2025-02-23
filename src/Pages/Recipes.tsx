@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Components/Card";
 import axios from "axios";
+import { Link } from "react-router";
 
 const Recipes = () => {
   const [recipe, setRecipe] = useState<Card[]>([]);
@@ -44,11 +45,13 @@ const Recipes = () => {
             .filter((recipe) => recipe.title.toLowerCase().includes(query))
             .map((recipe) => (
               <div key={recipe.id}>
-                <Card
-                  id={recipe.id}
-                  image={recipe.image}
-                  title={recipe.title}
-                />
+                <Link to={`/recipedetails/${recipe.id}/${recipe.title}`}>
+                  <Card
+                    id={recipe.id}
+                    image={recipe.image}
+                    title={recipe.title}
+                  />
+                </Link>
               </div>
             ))
         )}

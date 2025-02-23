@@ -6,6 +6,7 @@ import Random from "../Pages/Random";
 import Contact from "../Pages/Contact";
 import React from "react";
 import NotFound from "../Pages/NotFound";
+import RecipeDetails from "../Pages/RecipeDetails";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="recipes" element={<Recipes />} />
+          <Route path="recipedetails/:id/:title" element={<RecipeDetails />} />
           <Route path="random" element={<Random />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
