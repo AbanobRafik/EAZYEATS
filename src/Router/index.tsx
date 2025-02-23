@@ -5,17 +5,19 @@ import Recipes from "../Pages/Recipes";
 import Random from "../Pages/Random";
 import Contact from "../Pages/Contact";
 import React from "react";
+import NotFound from "../Pages/NotFound";
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />} errorElement={<NotFound />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="recipes" element={<Recipes />} />
           <Route path="random" element={<Random />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

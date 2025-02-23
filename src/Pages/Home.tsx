@@ -14,7 +14,7 @@ const Home = () => {
     const loadRecipes = async () => {
       try {
         const { data } = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?apiKey=566614587ec744708f3e75807113d846&number=5`
+          `https://api.spoonacular.com/recipes/complexSearch?apiKey=a55070bc89794d78a54145cebde16398&number=5`
         );
         setRecipes(data.results);
       } catch (err) {
