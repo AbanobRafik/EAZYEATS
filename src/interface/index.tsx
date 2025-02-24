@@ -5,7 +5,8 @@ export interface Card {
   extendedIngredients?: Ingredient[];
 }
 export interface Ingredient {
-  aisel: string;
+  id: number;
+  aisle: string;
   amount: number;
   name: string;
   image: string;

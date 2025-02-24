@@ -13,7 +13,7 @@ const Recipes = () => {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          "https://api.spoonacular.com/recipes/complexSearch?apiKey=a55070bc89794d78a54145cebde16398&number=50"
+          "https://api.spoonacular.com/recipes/complexSearch?apiKey=a55070bc89794d78a54145cebde16398&number=100"
         );
         setRecipe(data.results);
       } catch (error) {
