@@ -17,7 +17,7 @@ const Random = () => {
       } catch (error) {
         console.log("Error fetching random recipe:", error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
     loadRandomRecipe();
@@ -28,7 +28,7 @@ const Random = () => {
       <h3 className="mt-20 p-4 text-center text-xl font-semibold">
         Discover a new recipe every time you refresh the page!
       </h3>
-      <div className="max-w-2xl mb-5 mx-auto p-6 bg-emerald-200 shadow-lg rounded-lg">
+      <div className="max-w-2xl mb-5 mx-auto p-6 bg-yellow-200 shadow-lg rounded-lg">
         {loading ? (
           <p className="text-2xl text-center text-gray-600">
             Loading Recipe...
@@ -51,7 +51,7 @@ const Random = () => {
               </h3>
               <ul>
                 {randomRecipe.extendedIngredients?.map((ingredient, index) => (
-                  <li key={index} className="mb-5 bg-emerald-50 p-2 rounded-lg">
+                  <li key={index} className="mb-5 bg-yellow-50 p-2 rounded-lg">
                     <div className="flex items-center gap-1">
                       <img
                         src={`https://spoonacular.com/cdn/ingredients_100x100/${ingredient.image}`}
