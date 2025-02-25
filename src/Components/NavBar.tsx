@@ -9,7 +9,7 @@ const NavBar = () => {
       <nav className="relative flex-wrap flex w-full justify-between items-center px-12 py-2 backdrop:blur-sm border-b-amber-300 border-b-2 bg-white/10 backdrop-blur-sm border shadow-lg">
         {/* for small screen */}
         <div className="flex items-center space-x-2">
-          <img src="/public/logo.png" className="w-10 h-10 mb-4" />
+          <img src="/logo.png" className="w-10 h-10 mb-4" />
           <h3 className="md:text-2xl text-xl font-bold">EAZYEAT</h3>
         </div>
 
