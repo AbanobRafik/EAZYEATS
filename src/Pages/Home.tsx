@@ -8,7 +8,7 @@ const Home = () => {
   const [recipes, setRecipes] = useState<Card[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const RatatouilleImg = "/src/assets/ratatouille.jpg";
+  const RatatouilleImg = "/public/image/ratatouille.jpg";
 
   useEffect(() => {
     const loadRecipes = async () => {
