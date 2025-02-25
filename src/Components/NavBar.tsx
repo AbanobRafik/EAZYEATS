@@ -6,7 +6,7 @@ const NavBar = () => {
   const [openMenu, setIsOpenMenu] = useState(false);
   return (
     <div className="fixed top-0 w-full z-50">
-      <nav className="relative flex-wrap flex w-full justify-between items-center px-12 py-2 backdrop:blur-md border-b-amber-300 border-b-2 bg-white/10 backdrop-blur-md border shadow-lg">
+      <nav className="relative flex-wrap flex w-full justify-between items-center px-12 py-2 backdrop:blur-sm border-b-amber-300 border-b-2 bg-white/10 backdrop-blur-sm border shadow-lg">
         {/* for small screen */}
         <div className="flex items-center space-x-2">
           <img src="/src/assets/logo.png" className="w-10 h-10 mb-4" />
